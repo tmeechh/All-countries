@@ -40,7 +40,7 @@ export default function AllCountries({ searchTerm, selectedRegion }) {
   }
 
   if (isError) {
-    return <p className="py-6">{isError}</p>;
+    return <p className="py-6">Something went Wrong!</p>;
   }
 
   console.log(

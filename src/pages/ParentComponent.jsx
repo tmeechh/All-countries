@@ -20,7 +20,7 @@ export default function ParentComponent() {
 
   if (isLoading) return <div className="spinner "></div>;
 
-  if (isError) return <div>Error: {isError}</div>;
+  if (isError) return <div>Something went Wrong!</div>;
 
   if (!Array.isArray(countryData)) return;
 
@@ -71,30 +71,7 @@ export default function ParentComponent() {
     );
   };
 
-  // const getBorderCountries = async (borderCountries) => {
-  //   console.log(borderCountries);
-  //   if (!Array.isArray(borderCountries) || borderCountries.length === 0) {
-  //     return 'N/A';
-  //   }
-
-  //   // console.log(borderCountries[0]);
-  //   // const code = borderCountries ? borderCountries[0] : '';
-  //   //   const res = await fetch(`https://restcountries.com/v3.1/alpha/${code}`);
-  //   //   console.log(res);
-
-  //   return (
-  //     <span className="flex flex-wrap ml-2">
-  //       jkh
-  //       {/* {borderCountries.map((country) => (
-  //         <ul key={country} className="ul shadow">
-  //           <Link to={`/detail/${country}`} className="">
-  //             <li>{country || 'N/A'}</li>
-  //           </Link>
-  //         </ul>
-  //       ))} */}
-  //     </span>
-  //   );
-  // };
+ 
 
   return (
     <div>

@@ -5,7 +5,7 @@ import { fetchBorderCountries } from '../slices/borderSlice';
 
 export default function Borders({ borders }) {
   const dispatch = useDispatch();
-  const { borderCountries, isLoading } = useSelector((state) => state.border);
+  const { borderCountries, isLoading, isError } = useSelector((state) => state.border);
 
   useEffect(() => {
     if (borders && borders.length > 0) {
@@ -17,8 +17,10 @@ export default function Borders({ borders }) {
 
   return (
     <div>
-      {isLoading ? (
+       {isLoading ? (
         <div>Loading...</div>
+      ) : isError ? (
+        <div>Something Went Wrong!</div>
       ) : (
         <ul className="flex flex-wrap gap-2 px-2">
           {borderCountries.map((border, index) => (
