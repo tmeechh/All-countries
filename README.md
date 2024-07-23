@@ -36,20 +36,26 @@ Heroicons
 
 
 Usage
-Searching for Countries
+
+
+Searching for Countries,
 
 Use the search bar on the homepage to find countries by name or capital.
 
 Filtering by Region
+
 Use the dropdown menu to filter countries by region.
 
 Viewing Country Details
+
 Click on the "More Details..." link for a country to view detailed information.
 
 Redux Store Setup
+
 The application uses Redux Toolkit for state management. The countriesSlice and countryDetailSlice handle fetching and storing country data.
 
 Environment Variables
+
 Set the url in the relevant components to your backend API endpoint if needed.
 
 
