@@ -2,7 +2,10 @@
 
 
 Countries API
-Overview
+
+
+Overview:
+
 This project is a solution to a Frontend Mentor challenge. It is a React application that fetches data about countries from an API and displays it. Users can search for countries, filter by region, and view detailed information about each country.
 
 Features
@@ -34,6 +37,7 @@ Heroicons
 
 Usage
 Searching for Countries
+
 Use the search bar on the homepage to find countries by name or capital.
 
 Filtering by Region
@@ -47,6 +51,10 @@ The application uses Redux Toolkit for state management. The countriesSlice and 
 
 Environment Variables
 Set the url in the relevant components to your backend API endpoint if needed.
+
+
+
+
 
 Contributing
 This is a private project. If you have access, feel free to open issues or submit pull requests for improvements and bug fixes.
